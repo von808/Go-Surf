@@ -15,7 +15,6 @@
     font-weight: 800;
     font-size: 200px;
     line-height: 156px;
-    text-transform: uppercase;
     color: rgba(#fff, .07);
     z-index: 1;
     max-width: 450px;
@@ -59,8 +58,6 @@
     position: absolute;
     right: 73px;
     bottom: 116px;
-    color: #fff;
-    text-transform: uppercase;
     text-align: right;
     &-title{
       font-weight: 800;
@@ -101,7 +98,6 @@
   bottom: 30px;
   max-width: 920px;
   width: 100%;
-  color: #fff;
 }
 .dots-box{
   max-width: 200px;
@@ -116,12 +112,12 @@
     font-weight: 800;
     font-size: 24px;
     line-height: 34px;
-    text-transform: uppercase;
   }
   &__name{
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
 .slick-current .dots-box{
@@ -134,7 +130,6 @@
   z-index: 1;
   left: 0;
   text-align: center;
-  color:#fff;
   .logo{
     z-index: 4;
     // margin-bottom: 35px;
@@ -152,7 +147,7 @@
       margin: 0 auto;
       &-item{
         &--link{
-          color:#fff;
+          text-transform: capitalize;
           display: block;
         }
         &--img{
@@ -184,6 +179,7 @@
   .location-btn{
     font-weight: 300;
     font-size: 12px;
+    text-transform: capitalize;
     line-height: 14px;
     letter-spacing: 1.05px;
     padding-left: 19px;
