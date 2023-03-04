@@ -149,6 +149,7 @@
         &--link{
           text-transform: capitalize;
           display: block;
+          color: inherit;
         }
         &--img{
           margin-bottom: 6px;
@@ -180,6 +181,7 @@
     font-weight: 300;
     font-size: 12px;
     text-transform: capitalize;
+    color: inherit;
     line-height: 14px;
     letter-spacing: 1.05px;
     padding-left: 19px;
@@ -198,6 +200,28 @@
     }
   }
 }
+.surf{
+  &__inner {
+    padding: 157px 0 50px;
+    position: relative;
+  }
+  &__slider{
+    min-height: 892px;
+  }
+  .big-marker{
+    position: absolute;
+    top: 225px;
+    right: -162px;
+    opacity: 1;
+  }
+  .coordinates{
+    position: absolute;
+    top: 538px;
+    right: 61px;
+  }
+  
+}
+
 
 
 @import 'media';

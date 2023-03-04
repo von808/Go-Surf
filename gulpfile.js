@@ -1,12 +1,12 @@
 const { src, dest, watch, parallel, series } = require('gulp');
 
-const scss = require('gulp-sass')(require('sass'));
+const scss         = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify-es').default;
-const imagemin = require('gulp-imagemin');
-const browserSync = require('browser-sync').create();
-const del = require('del');
+const concat       = require('gulp-concat');
+const uglify       = require('gulp-uglify-es').default;
+const imagemin     = require('gulp-imagemin');
+const browserSync  = require('browser-sync').create();
+const del          = require('del');
 
 function styles() {
   return src('app/scss/style.scss')
