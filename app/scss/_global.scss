@@ -12,6 +12,7 @@ body {
 
 a{
   display: inline-block;
+  color: #fff;
 }
 
 .wrapper {
@@ -82,6 +83,36 @@ a{
 .btn{
   background-color: transparent;
   border: none;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  span{
+    display: inline-block;
+    padding: 27px 57px 27px 17px;
+    margin-left: 19px;
+    background: rgba(74, 246, 205, 1);
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: #fff;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -10px;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      background-image: url(../images/arrow-right.svg);
+      width: 24px;
+      height: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 17px;
+    }
+  }
 }
 .section {
   &-title {
