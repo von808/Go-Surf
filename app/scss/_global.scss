@@ -1,3 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+}
 body {
   overflow-x: hidden;
   min-width: 320px;
@@ -9,29 +30,14 @@ body {
   background-color: #171919;
   text-transform: uppercase;
 }
-
 a{
   display: inline-block;
   color: #fff;
 }
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-.main {
-  flex: 1 0 auto;
-}
-
-.footer {
-  flex: 0 0 auto;
-}
 .title {
   font-weight: 800;
   font-size: 40px;
-  line-height: 86px;
+  line-height: 56px;
 }
 .subtitle {
   font-size: 22px;
@@ -42,6 +48,9 @@ a{
   margin: 0 0 8px 0;
   display: inline-block;
   position: relative;
+}
+.slick-list{
+  overflow: visible;
 }
 .headline-top {
   &::before{
@@ -137,17 +146,61 @@ a{
     text-align: right;
     &-title{
       padding: 0 7px 0 0;
+      span{
+        font-weight: 100;
+      }
     }
   }
 }
-.container {
-    max-width: 1950px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
-// .container-fluid {
-//     max-width: 1920px;
-//     margin: 0 auto;
-//     padding: 0 10px;
-// }
+.quantity {
+  display: inline-block;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+.quantity input {
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+  display: block;
+  border: none;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  background-color: transparent;
+  color:#fff;
+}
+.quantity input:focus {
+  outline: 0;
+}
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 45px;
+}
+.quantity-button.quantity-up {
+  position: absolute;
+  right: 0;
+}
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 25px;
+}
