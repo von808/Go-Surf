@@ -1,3 +1,38 @@
-@media(max-width: 1440px){
-  
+@media(max-width: 1439px){
+  .header__title{
+    left: 60px;
+    font-size: 150px;
+    line-height: 120px;
+  }
+  .logo{
+    margin-bottom: 20px;
+  }
+  .logo-link img{
+    width: 100px;
+  }
+  .menu{
+    margin-bottom: 20px;
+  }
+  .menu__list{
+    min-height: 340px;
+  }
+  .search-btn{
+    margin-bottom: 0;
+  }
+  .btn{
+    line-height: 24px;
+  }
+  .date{
+    font-size: 60px;
+    margin-bottom: 10px;
+    span{
+      padding-top: 5px;
+    }
+  }
+  .location-btn{
+    margin-bottom: 0;
+    &::before{
+      top: 4px;
+    }
+  }
 }
